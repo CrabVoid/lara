@@ -9,3 +9,5 @@ Route::get('/', function () {
 use App\Http\Controllers\BookController;
 
 Route::get('/Books', [BookController::class, 'index']);
+Route::get('/Books/create', [BookController::class, 'create']);
+Route::post('/Books', [BookController::class, 'store']);

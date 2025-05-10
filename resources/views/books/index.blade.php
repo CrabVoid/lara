@@ -1,3 +1,6 @@
+<h1>Books</h1>
+
+<a href="/Books/create">Create a Book</a>
 <ul>
     @foreach($allbooks as $book)
         <li>
