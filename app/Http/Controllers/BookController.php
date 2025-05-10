@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 class BookController extends Controller
 {
     public function index() {
-        return "there will be books here";
+        $books = Book::all();
+        return $books;
     }
 }
